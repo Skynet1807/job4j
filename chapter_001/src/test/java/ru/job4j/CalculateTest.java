@@ -1,5 +1,7 @@
 package ru.job4j;
 
+
+
 import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -20,10 +22,9 @@ public class CalculateTest {
 public void whenTakeNameThenTreeEchoPlusName() {
     String input = "Petr Arsentev";
     String expect = "Echo, echo, echo : Petr Arsentev"; 
-    CalculateTest calc = new CalculateTest();
+    Calculate calc = new Calculate();
     String result = calc.echo(input);
     assertThat(result, is(expect));
 }
  
 }
- 

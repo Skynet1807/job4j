@@ -21,22 +21,14 @@ public class Board {
             for (int j = 0; j < 3; j++) {
                 // условие проверки, что писать пробел или X
                 // Выше в задании мы определили закономерность, когда нужно проставлять X
-                if (j == i) {
+                if ((i + j) % 2 == 0) {
 
                     screen.append("X");
                 } else {
-                    if (j == 2 && i == 0) {
-                        screen.append("X");
-                    } else {
-                        if (j == 0 && i == 2) {
-                            screen.append("X");
-                        } else {
                         screen.append(" ");
                         }
                     }
-                }
 
-            }
             // добавляем перевод на новую строку.
             screen.append(ln);
         }

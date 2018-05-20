@@ -7,7 +7,10 @@ public class Check {
             if (data[i] == false) {
                 result = false;
                 break;
-            } else  result = true;
-        }return result;
+            } else {
+                result = true;
+            }
+
+        }   return result;
     }
 }
